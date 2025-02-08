@@ -7,6 +7,7 @@ import { Projects } from "./components/Projects";
 import { TechStack } from "./components/TechStack";
 import { BlurFade } from "./components/ui/blur-fade";
 import { Header } from "./components/Header";
+import { Contact } from "./components/Contact";
 
 export default function Home() {
   return (
@@ -25,6 +26,9 @@ export default function Home() {
         </BlurFade>
         <BlurFade inView>
           <Projects />
+        </BlurFade>
+        <BlurFade inView className="w-full">
+          <Contact />
         </BlurFade>
       </div>
     </div>
