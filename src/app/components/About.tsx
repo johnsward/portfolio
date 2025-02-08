@@ -26,8 +26,8 @@ export const About = () => {
         <h2 className="font-regular text-gray-600 dark:text-gray-200 text-xl">
           {"Software Developer & Student"}
         </h2>
-        <p className="dark:text-slate-400 text-gray-400 text-pretty">
-        {"I’m a software developer passionate about building cool things."}
+        <p className="dark:text-slate-400 text-basic text-gray-400 mt-2 font-light">
+        {"Currently studying a BSc in Information Systems. In the meantime, I enjoy building cool things."}
         </p>
       </div>
       <div className="flex flex-row items-center">
