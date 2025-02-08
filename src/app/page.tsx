@@ -5,21 +5,28 @@ import { About } from "./components/About";
 import { TabContent } from "./components/TabContent";
 import { Projects } from "./components/Projects";
 import { TechStack } from "./components/TechStack";
-import { InteractiveGridPattern } from "./components/ui/interactive-grid-pattern";
+import { BlurFade } from "./components/ui/blur-fade";
+import { Header } from "./components/Header";
 
 export default function Home() {
   return (
-    <div className="flex flex-col p-12 gap-12 items-center">
-      <div data-magic="interactive-grid-pattern" className="interactive-grid-pattern">
-        <About />
+    <div>
+      <Header />
+
+      <div className="flex flex-col p-12 gap-8 items-center scroll-smooth">
+        <BlurFade inView>
+          <About />
+        </BlurFade>
+        <BlurFade inView>
+          <TabContent />
+        </BlurFade>
+        <BlurFade inView>
+          <TechStack />
+        </BlurFade>
+        <BlurFade inView>
+          <Projects />
+        </BlurFade>
       </div>
-      <div className="w-full">
-        <TabContent />
-      </div>
-      <div>
-        <TechStack />
-      </div>
-        <Projects />
     </div>
   );
 }
