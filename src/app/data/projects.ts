@@ -6,7 +6,13 @@ export const projects = [
         sourceLink: "https://github.com/johnsward/rubber-duck-app",
         image: "/images/rubber-duck.png",
     },
-
+    
+    {
+        title: "Portfolio Website",
+        description: "This portfolio, built with Next.js and Tailwind CSS.",
+        sourceLink: "https://github.com/johnsward/portfolio",
+        image: "/images/portfolio.png",
+    }, 
     {
         title: "Francas (Blog Website)",
         description: "A modern lifestyle blog built with React and NodeJS.",
@@ -14,9 +20,4 @@ export const projects = [
         image: "/images/francas.png",
     },
 
-    {
-        title: "Portfolio Website",
-        description: "This portfolio, built with Next.js and Tailwind CSS.",
-        sourceLink: "",
-    }
 ];

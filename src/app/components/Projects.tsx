@@ -13,7 +13,7 @@ export const Projects = () => {
 
       <div className="grid grid-cols-1 pt-6 md:grid-cols-2 gap-6">
         {projects.map((proj) => (
-          <div className="rounded-xl border bg-card text-card-foreground shadow">
+          <div key={proj.title} className="rounded-xl border bg-card text-card-foreground shadow">
             <div
               key={proj.title}
               className="flex flex-col justify-start gap-2 p-4"
