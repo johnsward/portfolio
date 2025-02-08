@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import { NavigationTab } from "./NavigationTab";
-import { education } from "../data/education";
+import React from "react";
 import { experience } from "../data/experience";
 
 export const ExperienceContent = () => {
