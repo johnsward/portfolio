@@ -1,17 +1,51 @@
 "use client";
-import React, {useState} from "react";
-import { useRouter } from "next/navigation";
+import React, { useEffect, useState } from "react";
+import SunIcon from "./icons/sunicon.svg";
+import DarkModeIcon from "./icons/darkmodeicon.svg";
 
 export const Header = () => {
-    const router = useRouter();
-    return (
-        <div className="flex flex-row align-middle justify-between p-4">
-            <h1>John Swärd</h1>
-            <ul className="flex flex-row gap-4">
-                <li className="cursor-pointer" onClick={() => router.push("/about")}>About</li>
-                <li className="cursor-pointer" onClick={() => router.push("/projects")}>Projects</li>
-                <li className="cursor-pointer" onClick={() => router.push("/contact")}>Contact</li>
-            </ul>
-        </div>
-    );
-    };
+  const [theme, setTheme] = useState<"light" | "dark">("light");
+
+  useEffect(() => {
+    // Get theme from localStorage or detect system preference
+    const savedTheme = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
+      document.documentElement.classList.add("dark");
+      setTheme("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      setTheme("light");
+    }
+  }, []);
+
+  const toggleTheme = () => {
+    if (theme === "light") {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+      setTheme("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+      setTheme("light");
+    }
+  };
+
+  return (
+    <div className="fixed top-0 right-0 p-4">
+      <button
+        onClick={toggleTheme}
+        title={theme === "light" ? "Enable Dark Mode" : "Enable Light Mode"}
+        aria-label={theme === "light" ? "Enable Dark Mode" : "Enable Light Mode"}
+        className="cursor-pointer"
+      >
+        {theme === "light" ? (
+          <SunIcon className="w-6 h-6 text-gray-500" />
+        ) : (
+          <DarkModeIcon className="w-6 h-6 text-gray-300" />
+        )}
+      </button>
+    </div>
+  );
+};

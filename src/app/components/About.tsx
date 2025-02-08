@@ -23,10 +23,10 @@ export const About = () => {
         <h1 className="flex flex-row gap-4 font-semibold dark:text-slate-200 text-gray-800 text-5xl">
           Hi, I'm <p className="text-blue-400">John!</p>
         </h1>
-        <h2 className="font-regular text-gray-600 dark:text-gray-200 text-xl">
+        <h2 className="font-regular text-gray-800 dark:text-gray-200 text-xl">
           {"Software Developer & Student"}
         </h2>
-        <p className="dark:text-slate-400 text-basic text-gray-400 mt-2 font-light">
+        <p className="dark:text-slate-400 text-basic text-gray-600 mt-2 font-light">
         {"Currently studying a BSc in Information Systems. In the meantime, I enjoy building cool things."}
         </p>
       </div>

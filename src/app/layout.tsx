@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`dark ${openSans.variable}`}>
+    <html lang="en" className={` ${openSans.variable}`}>
       <body className="antialiased text-slate-100 max-w-3xl min-h-screen flex flex-col items-center px-8 mx-auto">
         {children}
       </body>

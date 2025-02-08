@@ -11,7 +11,7 @@ export const styles = {
         fontSize: "14px",
     },
     inactiveText: {
-        color: "#97a6bb",
+        color: "#707780",
         fontWeight: "600",
         fontSize: "14px",
     },
