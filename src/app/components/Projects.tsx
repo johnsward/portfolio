@@ -2,7 +2,7 @@ import React from "react";
 import { projects } from "../data/projects";
 import GithubLogo from "./icons/githublogo.svg";
 import { Button } from "./ui/button";
-import LanguageIcon from '@mui/icons-material/Language';
+import LanguageIcon from "@mui/icons-material/Language";
 
 export const Projects = () => {
   return (
@@ -29,25 +29,23 @@ export const Projects = () => {
                 />
               </span>
               <div className="pt-0 flex flex-col gap-2">
-              <h1 className="font-semibold text-[14px] text-gray-900 dark:text-slate-200">
-                {proj.title}
-              </h1>
-              <p className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
-                {proj.description}
-              </p>
+                <h1 className="font-semibold text-[14px] text-gray-900 dark:text-slate-200">
+                  {proj.title}
+                </h1>
+                <p className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
+                  {proj.description}
+                </p>
               </div>
-              <div className="mt-2 flex flex-wrap gap-1">
-                <ul className="flex flex-row gap-2">
-                  {proj.techStack.map((tech) => (
-                    <li
-                      key={tech}
-                      className="inline-flex items-center rounded-md border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 px-1 py-0 text-[10px]"
-                    >
-                      {tech}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <ul className="flex flex-row gap-2 flex-wrap">
+                {proj.techStack.map((tech) => (
+                  <li
+                    key={tech}
+                    className="inline-flex items-center rounded-md border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 px-1 py-0 text-[10px]"
+                  >
+                    {tech}
+                  </li>
+                ))}
+              </ul>
               <div className="flex flex-row gap-2 justify-between mt-6">
                 <Button
                   variant="outline"
