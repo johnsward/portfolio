@@ -5,7 +5,7 @@ export const projects = [
         link: "https://rubber-duck-app.vercel.app/",
         sourceLink: "https://github.com/johnsward/rubber-duck-app",
         image: "/images/rubber-duck.png",
-        techStack: ["NextJS", "PostgreSQL", "TypeScript", "TailwindCSS"],
+        techStack: ["NextJS", "NodeJS", "PostgreSQL", "TypeScript", "TailwindCSS"],
     },
     
     {
@@ -13,7 +13,7 @@ export const projects = [
         description: "This portfolio, built with Next.js and Tailwind CSS.",
         sourceLink: "https://github.com/johnsward/portfolio",
         image: "/images/portfolio.png",
-        techStack: ["Next.js", "Tailwind CSS"],
+        techStack: ["Next.js", "Tailwind CSS", "TypeScript"],
 
     }, 
     {
