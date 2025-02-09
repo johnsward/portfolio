@@ -13,7 +13,7 @@ export const projects = [
         description: "This portfolio, built with Next.js and Tailwind CSS.",
         sourceLink: "https://github.com/johnsward/portfolio",
         image: "/images/portfolio.png",
-        techStack: ["Next.js", "Tailwind CSS", "TypeScript"],
+        techStack: ["Next.js", "TailwindCSS", "TypeScript"],
 
     }, 
     {
