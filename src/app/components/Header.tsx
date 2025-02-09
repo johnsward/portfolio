@@ -33,7 +33,7 @@ export const Header = () => {
   };
 
   return (
-    <div className="fixed top-0 right-0 p-4">
+    <div className="fixed top-0 right-0 py-4 px-8">
       <button
         onClick={toggleTheme}
         title={theme === "light" ? "Enable Dark Mode" : "Enable Light Mode"}

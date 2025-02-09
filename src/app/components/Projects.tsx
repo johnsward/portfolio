@@ -36,37 +36,39 @@ export const Projects = () => {
                   {proj.description}
                 </p>
               </div>
-              <ul className="flex flex-row gap-2 flex-wrap">
-                {proj.techStack.map((tech) => (
-                  <li
-                    key={tech}
-                    className="inline-flex items-center rounded-md border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 px-1 py-0 text-[10px]"
-                  >
-                    {tech}
-                  </li>
-                ))}
-              </ul>
-              <div className="flex flex-row gap-2 justify-between mt-6">
-                <Button
-                  variant="outline"
-                  size={"sm"}
-                  className="text-[10px]"
-                  onClick={() => window.open(proj.sourceLink)}
-                >
-                  <GithubLogo />
-                  {"Source"}
-                </Button>
-                {proj.link && (
+              <div className="pt-0 flex min-h-[100px] flex-col items-start justify-between gap-4">
+                <ul className="mt-2 flex flex-wrap gap-1">
+                  {proj.techStack.map((tech) => (
+                    <li
+                      key={tech}
+                      className="inline-flex items-center rounded-md border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 px-1 py-0 text-[10px]"
+                    >
+                      {tech}
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex flex-row flex-wrap items-start w-full md:justify-between gap-2 md:gap-1">
                   <Button
-                    variant="default"
-                    size="sm"
-                    onClick={() => window.open(proj.link)}
-                    className="text-[10px] dark:bg-[#f0f0f0]"
+                    variant="outline"
+                    size={"sm"}
+                    className="text-[10px]"
+                    onClick={() => window.open(proj.sourceLink)}
                   >
-                    {"Website"}
-                    <LanguageIcon />
+                    <GithubLogo />
+                    {"Source"}
                   </Button>
-                )}
+                  {proj.link && (
+                    <Button
+                      variant="default"
+                      size="sm"
+                      onClick={() => window.open(proj.link)}
+                      className="text-[10px] dark:bg-[#f0f0f0]"
+                    >
+                      {"Website"}
+                      <LanguageIcon />
+                    </Button>
+                  )}
+                </div>
               </div>
             </div>
           </div>
