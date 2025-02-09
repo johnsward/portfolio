@@ -1,5 +1,6 @@
 import { Open_Sans } from "next/font/google";
 import Head from "next/head";
+import { Analytics } from '@vercel/analytics/next';
 import "./globals.css";
 
 const openSans = Open_Sans({
@@ -33,6 +34,7 @@ export default function RootLayout({
       </Head>
       <body className="antialiased text-slate-100 max-w-3xl min-h-screen flex flex-col items-center px-8 mx-auto">
         {children}
+        <Analytics />
       </body>
     </html>
   );
