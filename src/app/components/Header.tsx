@@ -9,7 +9,9 @@ export const Header = () => {
   useEffect(() => {
     // Get theme from localStorage or detect system preference
     const savedTheme = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
 
     if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
       document.documentElement.classList.add("dark");
@@ -37,13 +39,15 @@ export const Header = () => {
       <button
         onClick={toggleTheme}
         title={theme === "light" ? "Enable Dark Mode" : "Enable Light Mode"}
-        aria-label={theme === "light" ? "Enable Dark Mode" : "Enable Light Mode"}
+        aria-label={
+          theme === "light" ? "Enable Dark Mode" : "Enable Light Mode"
+        }
         className="cursor-pointer"
       >
         {theme === "light" ? (
-          <SunIcon className="w-6 h-6 text-gray-500" />
-        ) : (
           <DarkModeIcon className="w-6 h-6 text-gray-300" />
+        ) : (
+          <SunIcon className="w-6 h-6 text-gray-500" />
         )}
       </button>
     </div>
