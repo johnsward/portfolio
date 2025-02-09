@@ -38,7 +38,7 @@ export const IconRow: React.FC<IconRowProps> = ({ isButtonEnabled }) => {
         </a>
         <a
           className="w-8 h-8 cursor-pointer hover:rotate-12 transition-all ease-in duration-200"
-          onClick={() => window.open("https://github.com/johnsward", "_blank")}
+          onClick={() => window.open("https://www.linkedin.com/in/john-sw%C3%A4rd-4301ba187/", "_blank")}
           title="LinkedIn"
           aria-label="LinkedIn"
         >
