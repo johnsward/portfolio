@@ -1,17 +1,10 @@
 "use client";
 
 import React from "react";
-import { useRouter } from "next/navigation";
-import { Button } from "./ui/button";
-import DownloadIcon from "@mui/icons-material/Download";
-import GithubIcon from "./icons/githublogo.svg";
-import LinkedInIcon from "./icons/linkedinicon.svg";
-import MailIcon from "./icons/mailicon.svg";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { IconRow } from "./IconRow";
 
 export const About = () => {
-  const router = useRouter();
   return (
     <div className="flex flex-col gap-6 justify-center items-center">
       <div className="gap-2 flex flex-col justify-center items-center">
