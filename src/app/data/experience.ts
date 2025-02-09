@@ -27,7 +27,7 @@ export const experience = [
         logo: "/logos/carebuilderlogo.jpeg",
         link: "https://www.futureinventions.se/",
         description: [
-            "Independently designed and implemented a complete calendar system for integration with a digital journal platform.",
+            "Independently designed and implemented a complete calendar system for integration with a digital medical records platform.",
             
         ],
         techStack: [".NET", "JavaScript", "HTML", "CSS"],
