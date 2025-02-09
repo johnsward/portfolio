@@ -4,8 +4,8 @@ import { experience } from "../data/experience";
 export const ExperienceContent = () => {
 
     return (
-    <div className="rounded-xl border bg-card text-card-foreground shadow">
-      <ul className="ml-10 border-l border-dotted border-gray-600">
+    <div className="rounded-lg border bg-card text-card-foreground shadow border-slate-400">
+      <ul className="ml-10 border-l border-dotted border-gray-800 dark:border-slate-400">
         {experience.map((exp) => (
           <li key={exp.company} className="relative ml-10 py-4">
             <a
@@ -13,7 +13,7 @@ export const ExperienceContent = () => {
               target="_blank"
               className="absolute -left-16 top-4 flex items-center justify-center rounded-full bg-white cursor-pointer"
             >
-              <span className="relative flex shrink-0 overflow-hidden rounded-full size-12 border">
+              <span className="relative flex items-center justify-center shrink-0 overflow-hidden rounded-full size-12 border border-gray-600 dark:border-slate-200">
                 <img
                   key={exp.id}
                   src={exp.logo}
@@ -23,20 +23,20 @@ export const ExperienceContent = () => {
               </span>
             </a>
             <div className="flex flex-1 flex-col justify-start gap-1">
-              <time className="flex text-xs text-muted-foreground gap-0.5">
+              <time className="text-xs text-muted-foreground">
                 <span>{exp.date}</span>
               </time>
-              <h1 className="font-semibold text-base text-gray-900 dark:text-slate-200">
+              <h1 className="font-semibold leading-none">
                 {exp.company}
               </h1>
-              <h2 className="font-normal text-sm text-[#737373] dark:text-[#a3a3a3]">
+              <h2 className="text-sm text-muted-foreground">
                 {exp.title}
               </h2>
 
               <ul className="flex flex-col px-4 py-2 gap-2">
                 {exp.description.map((resp) => (
                   <li
-                    className="text-sm list-disc text-[#737373] dark:text-[#a3a3a3]"
+                    className="prose pr-8 text-sm dark:prose-invert list-disc"
                     key={resp}
                   >
                     {resp}

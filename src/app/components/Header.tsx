@@ -45,9 +45,9 @@ export const Header = () => {
         className="cursor-pointer"
       >
         {theme === "light" ? (
-          <DarkModeIcon className="w-6 h-6 text-gray-800" />
+          <DarkModeIcon className="w-6 h-6 text-blue-900" />
         ) : (
-          <SunIcon className="w-6 h-6 text-slate-200" />
+          <SunIcon className="w-6 h-6 text-yellow-400" />
         )}
       </button>
     </div>

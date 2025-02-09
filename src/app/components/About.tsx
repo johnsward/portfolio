@@ -20,7 +20,7 @@ export const About = () => {
         <h2 className="font-regular text-pretty text-gray-800 dark:text-gray-200 text-xl">
           {"Software Developer & Student"}
         </h2>
-        <p className="dark:text-slate-400 text-basic text-gray-600 mt-2 font-light">
+        <p className="font-light text-pretty text-muted-foreground leading-none">
           {
             "Currently studying a BSc in Information Systems. In the meantime, I enjoy building cool things."
           }

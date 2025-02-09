@@ -13,7 +13,7 @@ export const NavigationTab: React.FC<ExperienceTabProps> = ({
 }) => {
   return (
     <div className="flex flex-col">
-      <div className="flex flex-row items-center justify-center align-middle border h-10 border-slate-400 rounded-md">
+      <div className="flex flex-row items-center justify-center align-middle border h-10 border-slate-400 rounded-lg">
         <div
           className="flex items-center justify-center cursor-pointer w-[50%]"
           style={selectedTab === "experience" ? styles.activeTab : undefined}
