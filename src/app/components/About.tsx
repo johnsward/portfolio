@@ -15,7 +15,7 @@ export const About = () => {
           </p>
         </div>
         <h1 className="flex flex-wrap gap-2 sm:gap-4 justify-center font-semibold dark:text-slate-200 text-gray-800 text-5xl">
-          Hi, I'm <span className="text-blue-400">John!</span>
+          {"Hi, I'm"}<span className="text-blue-400">John!</span>
         </h1>
         <h2 className="font-regular text-pretty text-gray-800 dark:text-gray-200 text-xl">
           {"Software Developer & Student"}
