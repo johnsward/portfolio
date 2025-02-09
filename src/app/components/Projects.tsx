@@ -63,7 +63,7 @@ export const Projects = () => {
                     variant="default"
                     size="sm"
                     onClick={() => window.open(proj.link)}
-                    className="text-[10px]"
+                    className="text-[10px] dark:bg-[#f0f0f0]"
                   >
                     {"Website"}
                     <LanguageIcon />
