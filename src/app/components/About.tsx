@@ -6,7 +6,7 @@ import { IconRow } from "./IconRow";
 
 export const About = () => {
   return (
-    <section className="flex flex-col gap-6 w-full items-center md:items-start">
+    <section className="flex flex-col gap-6 w-full md:items-start">
       <div className="gap-2 sm:gap-2 flex flex-col">
         <span className="flex flex-row gap-1">
           <LocationOnIcon className="w-6 h-6 text-gray-500 dark:text-gray-400" />
@@ -14,7 +14,7 @@ export const About = () => {
             {"Sweden"}
           </p>
         </span>
-        <div className="flex flex-col gap-2 w-full">
+        <div className="flex flex-col gap-2 max-w-md">
           <div className="flex flex-row gap-3 sm:gap-4 text-5xl">
             <h1 className="flex flex-wrap font-semibold dark:text-slate-200 text-gray-800 ">
               {"Hi I'm"}
