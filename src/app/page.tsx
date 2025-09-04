@@ -14,7 +14,7 @@ export default function Home() {
     <div>
       <Header />
 
-      <div className="flex flex-col p-12 gap-8 items-center scroll-smooth">
+      <div className="flex flex-col md:p-12 py-4 gap-8 items-center scroll-smooth">
         <BlurFade inView className="w-full">
           <About />
         </BlurFade>
