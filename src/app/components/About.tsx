@@ -16,7 +16,7 @@ export const About = () => {
         </span>
         <div className="flex flex-col gap-2 max-w-md">
           <div className="flex flex-row gap-3 sm:gap-4 text-5xl">
-            <h1 className="flex flex-wrap font-semibold dark:text-slate-200 text-gray-800 ">
+            <h1 className="flex flex-wrap font-semibold dark:text-slate-200 text-gray-800 text-5xl">
               {"Hi I'm"}
             </h1>
             <span className="text-blue-400 font-semibold">John!</span>
