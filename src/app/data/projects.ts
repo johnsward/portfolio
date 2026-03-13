@@ -1,5 +1,12 @@
 export const projects = [
     {
+        title: "Bagge & Ackes - Restaurant",
+        description: "Admin panel and site for a restaurant in Gothenburg",
+        link: "https://baggeackes.se",
+        image: "/images/bagge-ackes.png",
+        techStack: ["NextJS", "NodeJS", "PostgreSQL", "TypeScript", "TailwindCSS"],
+    },
+    {
         title: "Rubber Duck Debugging (AI Chatbot)",
         description: "Debugging AI chatbot that helps you solve coding problems by asking questions.",
         link: "https://rubber-duck-app.vercel.app/",
@@ -23,12 +30,6 @@ export const projects = [
         image: "/images/francas.png",
         techStack: ["React", "NodeJS", "MongoDB", "Express"],
     },
-    {
-        title: "Bagge & Ackes - Restaurant",
-        description: "Admin panel and site for a restaurant in Gothenburg",
-        link: "https://baggeackes.se",
-        image: "/images/bagge-ackes.png",
-        techStack: ["NextJS", "NodeJS", "PostgreSQL", "TypeScript", "TailwindCSS"],
-    }
+
 
 ];
