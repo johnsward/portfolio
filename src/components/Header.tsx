@@ -42,7 +42,7 @@ export const Header = () => {
         aria-label={
           theme === "light" ? "Enable Dark Mode" : "Enable Light Mode"
         }
-        className="cursor-pointer"
+        className="flex items-center justify-center rounded-full p-2 cursor-pointer transition-colors duration-200 hover:bg-accent"
       >
         {theme === "light" ? (
           <DarkModeIcon className="w-6 h-6 text-blue-900" />

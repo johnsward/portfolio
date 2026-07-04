@@ -6,7 +6,10 @@ export const EducationContent = () => {
     <div className="rounded-lg border bg-card text-card-foreground shadow border-slate-400">
       <ul className="ml-10 border-dotted border-l border-gray-600">
         {education.map((edu) => (
-          <li key={edu.id} className="relative ml-10 py-4">
+          <li
+            key={edu.id}
+            className="relative ml-10 py-4 pr-4 rounded-md transition-colors duration-200 hover:bg-accent/50"
+          >
             <a
               href={edu.link}
               target="_blank"

@@ -19,7 +19,7 @@ export const About = () => {
                         <h1 className="flex flex-wrap font-semibold dark:text-slate-200 text-gray-800 text-5xl">
                             {"Hi I'm"}
                         </h1>
-                        <span className="text-blue-400 font-semibold">
+                        <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text font-semibold text-transparent">
                             John!
                         </span>
                     </div>

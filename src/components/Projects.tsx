@@ -2,30 +2,29 @@ import React from "react";
 import { projects } from "../data/projects";
 import GithubLogo from "./icons/githublogo.svg";
 import { Button } from "./ui/button";
+import { SectionHeading } from "./SectionHeading";
 import LanguageIcon from "@mui/icons-material/Language";
 
 export const Projects = () => {
   return (
     <section className="mx-auto container max-w-3xl px-4 md:px-0 z-50 animate-fade-up animate-once animate-delay-[300ms]">
-      <h1 className="font-semibold text-3xl text-gray-800 dark:text-slate-200">
-        Featured Projects
-      </h1>
+      <SectionHeading eyebrow="Selected Work" title="Featured Projects" />
 
       <div className="grid grid-cols-1 pt-6 md:grid-cols-2 gap-6">
         {projects.map((proj) => (
           <div
             key={proj.title}
-            className="rounded-xl border bg-card text-card-foreground shadow"
+            className="group rounded-xl border bg-card text-card-foreground shadow transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-blue-400/50 dark:hover:border-blue-500/40"
           >
             <div
               key={proj.title}
               className="flex flex-col justify-start gap-2 p-4"
             >
-              <span>
+              <span className="block overflow-hidden rounded-lg">
                 <img
                   src={proj.image}
                   alt={proj.title}
-                  className="w-full h-40 object-cover"
+                  className="w-full h-40 object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                 />
               </span>
               <div className="pt-0 flex flex-col gap-2">
